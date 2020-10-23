@@ -1,0 +1,15 @@
+div {
+    border: 2px solid #000;
+}
+.div-px {
+    height: 500px;
+    width: 500px;
+}
+.div-pc {
+    height: 70%;
+    width: 70%;
+}
+.div-em {
+    height: 20em;
+    width: 20em;
+}
