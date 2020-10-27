@@ -25,3 +25,8 @@ nav li {
     position: fixed;
     top: 0
 }
+.article-relative {
+    position: relative;
+    bottom: 0;
+    background-color: red;
+}
