@@ -30,3 +30,8 @@ nav li {
     bottom: 0;
     background-color: red;
 }
+.btn-absolute {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
