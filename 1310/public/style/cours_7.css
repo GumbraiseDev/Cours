@@ -14,4 +14,14 @@ nav li {
     border: 2px dotted darkslateblue;
     margin: 20px
 }
-
+.article-absolute {
+    position: absolute;
+    background-color: deeppink;
+    top:0;right:0;left:0;
+    margin:0;
+    height: auto
+}
+.position-fixed {
+    position: fixed;
+    top: 0
+}
