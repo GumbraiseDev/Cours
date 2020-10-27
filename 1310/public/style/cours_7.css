@@ -1,0 +1,17 @@
+.container {
+    width: 960px;
+    background: chocolate;
+    margin: 0 auto
+}
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+    border: 1px dashed darkcyan
+}
+.article {
+    height: 500px;
+    border: 2px dotted darkslateblue;
+    margin: 20px
+}
+
