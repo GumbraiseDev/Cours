@@ -1,0 +1,141 @@
+ <script>
+        // Alert("coucou");
+        //commentaire simple ligne (pour commenerdu code)
+        /*
+            Ceci est un commentaire multiligne
+            pour expliquer le fonctionnement de notre code
+        */
+
+        /*
+            Type de variable 
+        */
+        let age = 25; // chiffre entier -> int / integer
+        let nom = "Chatigny" // chaine de caractere -> string
+        let tva = 20.6; // reel double float
+
+        /*
+            Operation de base 
+        */
+
+        let a = 10;
+        let b = 20;
+        let c = 30;
+        let d = 0;
+        // Addition
+        d = a + b; //30
+        console.log(d); // I/O affiche le résultat 
+
+        // Soustraction 
+        console.log(a - b);
+
+        // Mulitiplication
+        console.log(c / b);
+
+        // Modulo
+        console.log(a / 2);
+        console.log(a % 3); //le modulo c'est le reste de la division
+
+        // Incrementation 
+        e = 1;
+        e++;
+        e = e + 1; // equivalant à e++
+        console.log(e); // affiche 3
+
+        // décrémentation
+        e--;
+        e = e - 1;
+        e -= 12;
+
+        /*
+            Les chaines de caracteres (String)
+        */
+
+        let nomHero = "Tom";
+        let nomFamille = "Boy"; // nomFamille != nomfamille
+        let nomfamille = "Boy";
+        // concatenation
+        console.log(nomHero + ' ' + nomFamille); // action de joindre plusieurs srting ensemble 
+        console.debug(nomHero[0]); // affiche T // chaine de caractere est une collection de caracteres
+        console.debug(nomHero[0] + "-" + nomHero[1] + "-" + nomHero[2]);
+        let codeProduit = "CUSA-04607";
+        let pref = codeProduit.substring(0, 4); // affiche CUSA
+        let suff = codeProduit.substring(5, 10); // affiche 04607
+        let tiret = codeProduit.substring(4, 5); // affiche -
+
+        let codeGenere = pref + tiret + suff; // je reconstruit mon code
+
+        console.log(codeGenere.toLowerCase());
+
+        /*
+            Tableau 
+        */
+
+        console.log("-~-~-~-~-~-~-~-~ Tableau -~-~-~-~-~-~-~-~")
+        let monTabFruit = ['Pomme', 'Poire', 'Fraise', 'Banane'];
+        console.log(monTabFruit[2]);
+
+        // ajouter un element a mon tableau à la fin
+        monTabFruit.push("Tomate");
+        console.log(monTabFruit[4]);
+
+        // retirer le dernier élément et ça le retourne
+        console.log(monTabFruit);
+        document.writeln(monTabFruit.pop()); // document.writeln() écrit dans le flux de la page HTML
+
+        monTabFruit[3] = "Mangue"; // remplacer fraise banane par Mangue
+        console.log(monTabFruit);
+
+        monTabFruit.splice(1, 1); // retire Poire (debut , fin) ici l'élément d'index 1 jusqu'au 1
+        console.log(monTabFruit);
+
+        let monTab1 = ['truc', 12, 42, 15.2];
+        let monTab2 = ['coucou', 'ça', 'roule'];
+        monTab1.push(monTab2);
+
+        // TP 1 Afficher Coucou
+        console.log(monTab1[4][0]);
+
+        /*
+            Tableau associatif
+        */
+        let tabAssoc1 = {
+            'cle': 'valeur'
+        };
+        console.log(tabAssoc1['cle']);
+
+        let user1 = {
+            prenom: 'Riri',
+            nom: 'Duck',
+            age: 10,
+            hobby: 'Foot'
+        };
+        document.writeln("<br><br><h1>Utilisateur</h1>");
+        document.writeln('Prenom utilisateur: ' + user1['prenom']);
+
+        let user2 = {
+            'prenom': 'Fifi',
+            'nom': 'Duck',
+            'age': 15,
+            'hobby': 'guitare'
+        };
+
+        let user3 = {
+            'prenom': 'Loulou',
+            'nom': 'Duck',
+            'age': 13,
+            'hobby': 'VG'
+        };
+
+        let users = {
+            'user1': user1,
+            'user2': user2,
+            'user3': user3
+        };
+
+        document.writeln("<br><br>"); // saut de ligne
+        document.writeln("Prenom utilisateur: " + users['user1']['prenom']);
+        document.writeln("<br><br>"); // saut de ligne
+        document.writeln("Prenom utilisateur: " + users['user2']['prenom']);
+        document.writeln("<br><br>"); // saut de ligne
+        document.writeln("Prenom utilisateur: " + users['user3']['prenom']);
+    </script>
